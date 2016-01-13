@@ -2,15 +2,19 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+  
   <remote  name="github"
-           fetch="https://github.com" />
+           fetch="https://github.com/" />
+  
   <default revision="refs/tags/android-6.0.1_r10"
            remote="aosp"
+           sync-c="true"
            sync-j="4" />
 
   <project path=".org/build" name="platform/build" groups="pdk" />
-  <project path="build" name="Schischu/aosp_build" remote="github" groups="pdk" >
+  <project path="build" name="Schischu/aosp_android_build" remote="github" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
