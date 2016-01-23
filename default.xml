@@ -19,7 +19,7 @@
   </project>
 
   <project path=".org/android" name="platform/manifest" groups="pdk" />
-  <project path="android" name="Schischu/aosp_android_klimt_chagall" remote="github" groups="pdk" >
+  <project path="android" name="Schischu/android_chagall_klimt" remote="github" groups="pdk" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
 
@@ -451,7 +451,10 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
+
+  <project path=".org/system/core" name="platform/system/core" groups="pdk" />
+  <project path="system/core" name="Schischu/aosp_android_system_core" remote="github" groups="pdk" />
+
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
