@@ -19,7 +19,7 @@
   </project>
 
   <project path=".org/android" name="platform/manifest" groups="pdk" />
-  <project path="android" name="Schischu/android_lt03lte" remote="github" groups="pdk" >
+  <project path="android" name="Schischu/aosp_android_klimt_chagall" remote="github" groups="pdk" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
 
@@ -32,9 +32,26 @@
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
 
-  <project path="device/samsung/lt03lte" name="Schischu/aosp_android_device_samsung_lt03lte" remote="github" revision="marshmallow-release" />
-  <project path="kernel/samsung/lt03lte" name="Schischu/android_kernel_samsung_lt03lte" remote="github" revision="marshmallow-release" />
-  <project path="vendor/samsung/lt03lte" name="Schischu/android_vendor_samsung_lt03lte" remote="github" revision="marshmallow-release" />
+
+  <project path="device/samsung/chagall-klimt-common" name="Schischu/android_device_samsung_chagall_klimt_common" remote="github" revision="aosp-6.0" groups="device,chagall_klimt,broadcom_pdk" />
+
+  <project path="device/samsung/chagallwifi" name="Schischu/android_device_samsung_chagallwifi" remote="github" revision="aosp-6.0" groups="device,chagallwifi,broadcom_pdk" />
+  <project path="device/samsung/chagalllte" name="Schischu/android_device_samsung_chagalllte" remote="github" revision="aosp-6.0" groups="device,chagalllte,broadcom_pdk" />
+
+
+  <project path="device/samsung/klimtwifi" name="Schischu/android_device_samsung_klimtwifi" remote="github" revision="aosp-6.0" groups="device,klimtwifi,broadcom_pdk" />
+  <project path="device/samsung/klimtlte" name="Schischu/android_device_samsung_klimtlte" remote="github" revision="aosp-6.0" groups="device,klimtlte,broadcom_pdk" />
+
+  <project path="kernel/samsung/chagalllte" name="Schischu/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
+
+  <project path="vendor/samsung/chagall-klimt-common" name="Schischu/android_vendor_samsung_chagall_klimt_common" remote="github" revision="master" />
+  <project path="vendor/samsung/chagall-common" name="Schischu/android_vendor_samsung_chagall_common" remote="github" revision="master" />
+  <project path="vendor/samsung/chagallwifi" name="Schischu/android_vendor_samsung_chagallwifi" remote="github" revision="master" />
+  <project path="vendor/samsung/chagalllte" name="Schischu/android_vendor_samsung_chagalllte" remote="github" revision="master" />
+
+  <project path="vendor/samsung/klimt-common" name="Schischu/android_vendor_samsung_klimt_common" remote="github" revision="master" />
+  <project path="vendor/samsung/klimtwifi" name="Schischu/android_vendor_samsung_klimtwifi" remote="github" revision="master" />
+  <project path="vendor/samsung/klimtlte" name="Schischu/android_vendor_samsung_klimtlte" remote="github" revision="master" />
 
   <project path="vendor/google" name="Schischu/android_vendor_google" remote="github" revision="aosp-6.0" />
 
@@ -51,7 +68,10 @@
   <project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
+
+  <project path=".org/external/boringssl" name="platform/external/boringssl" groups="pdk" />
+  <project path="external/boringssl" name="Schischu/aosp_android_external_boringssl" remote="github" groups="pdk" />
+
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
@@ -226,6 +246,9 @@
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
+
+  <project path="external/stlport" name="platform/external/stlport" revision="lollipop-mr1-release" groups="pdk-cw-fs,pdk-fs" />
+
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,pdk-fs" />
@@ -252,7 +275,8 @@
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
 
   <project path=".org/frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/av" name="Schischu/aosp_android_frameworks_av" remote="github" revision="refs/tags/android-6.0.1_r10_lt03lte" groups="pdk" />
+  <project path="frameworks/av" name="Schischu/aosp_android_frameworks_av" remote="github" groups="pdk" />
+
   <project path=".org/frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/base" name="Schischu/aosp_android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" />
 
@@ -266,7 +290,7 @@
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
 
   <project path=".org/frameworks/native" name="platform/frameworks/native" groups="pdk" />
-  <project path="frameworks/native" name="Schischu/aosp_android_frameworks_native" remote="github" revision="refs/tags/android-6.0.1_r10_lt03lte" groups="pdk" />
+  <project path="frameworks/native" name="Schischu/aosp_android_frameworks_native" remote="github" groups="pdk"  />
 
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
@@ -286,19 +310,25 @@
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
 
   <project path=".org/frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
-  <project path="frameworks/opt/telephony" name="Schischu/aosp_android_frameworks_opt_telephony" remote="github" revision="refs/tags/android-6.0.1_r10_lt03lte" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="Schischu/aosp_android_frameworks_opt_telephony" remote="github" groups="pdk" />
 
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs,pdk-fs" />
+
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
+  <!--project path="frameworks/rs" name="Schischu/aosp_android_frameworks_rs" groups="pdk" remote="github" revision="marshmallow-release" /-->
+
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/data-binding" name="platform/frameworks/data-binding" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+
+  <project path=".org/hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+  <project path="hardware/broadcom/libbt" name="Schischu/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" revision="marshmallow-release" />
+
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
 
@@ -309,21 +339,15 @@
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
 
-  <project path=".org/hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
-  <project path="hardware/qcom/display" name="Schischu/aosp_android_hardware_qcom_display" remote="github" groups="pdk,qcom,qcom_display" />
-  <project path=".org/hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
-  <project path="hardware/qcom/gps" name="Schischu/aosp_android_hardware_qcom_gps" remote="github" groups="qcom,qcom_gps" />
-  <project path=".org/hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
-  <project path="hardware/qcom/keymaster" name="Schischu/aosp_android_hardware_qcom_keymaster" remote="github" groups="qcom,qcom_keymaster" />
-  <project path=".org/hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
-  <project path="hardware/qcom/media" name="Schischu/aosp_android_hardware_qcom_media" remote="github" groups="qcom" />
-  <project path=".org/hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="pdk,qcom_msm8x74" />
-  <project path="hardware/qcom/msm8x74" name="Schischu/aosp_android_hardware_qcom_msm8x74" remote="github" groups="pdk,qcom_msm8x74" />
+  <project path=".org/hardware/ril" name="platform/hardware/ril" groups="pdk" />
+  <project path="hardware/ril" name="Schischu/aosp_android_hardware_ril" remote="github" groups="pdk" />
 
-  <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
-  <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
-  <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+  <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" groups="pdk" />
+  <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" groups="pdk" />
+
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
@@ -359,6 +383,9 @@
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" groups="apps_nfc,pdk-fs" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
+
+  <project path="packages/apps/OpenDelta" name="omnirom/android_packages_apps_OpenDelta" remote="github" revision="android-6.0" groups="pdk-fs" />
+
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs"/>

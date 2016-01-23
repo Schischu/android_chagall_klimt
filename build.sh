@@ -11,7 +11,7 @@ export CCACHE_DIR=`pwd`/.ccache
 prebuilts/misc/linux-x86/ccache/ccache -M 120G
 
 if [ "x$1" == "x" ]; then
-  products="wingray"
+  products="chagalllte chagallwifi klimtlte klimtwifi"
 else
   products=$1
 fi
