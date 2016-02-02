@@ -8,7 +8,7 @@
   <remote  name="github"
            fetch="https://github.com/" />
   
-  <default revision="refs/tags/android-6.0.1_r10"
+  <default revision="refs/tags/android-6.0.1_r16"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -31,7 +31,6 @@
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
-
 
   <project path="device/samsung/chagall-klimt-common" name="Schischu/android_device_samsung_chagall_klimt_common" remote="github" revision="aosp-6.0" groups="device,chagall_klimt,broadcom_pdk" />
 
