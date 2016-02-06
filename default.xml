@@ -69,7 +69,7 @@
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs,pdk-fs" />
 
   <project path=".org/external/boringssl" name="platform/external/boringssl" groups="pdk" />
-  <project path="external/boringssl" name="Schischu/aosp_android_external_boringssl" remote="github" groups="pdk" />
+  <project path="external/boringssl" name="Schischu/aosp_android_external_boringssl" remote="github" revision="marshmallow-release" groups="pdk" />
 
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
@@ -233,7 +233,7 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
 
   <project path=".org/external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
-  <project path="external/sepolicy" name="Schischu/aosp_android_external_sepolicy" remote="github" groups="pdk" />
+  <project path="external/sepolicy" name="Schischu/aosp_android_external_sepolicy" remote="github" revision="marshmallow-release" groups="pdk" />
 
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
   <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
