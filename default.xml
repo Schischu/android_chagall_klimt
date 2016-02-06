@@ -19,7 +19,7 @@
   </project>
 
   <project path=".org/android" name="platform/manifest" groups="pdk" />
-  <project path="android" name="Schischu/android_chagall_klimt" remote="github" groups="pdk" >
+  <project path="android" name="Schischu/android_chagall_klimt" remote="github" revision="marshmallow-release" groups="pdk" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
 
@@ -341,11 +341,11 @@
   <project path=".org/hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ril" name="Schischu/aosp_android_hardware_ril" remote="github" groups="pdk" />
 
-  <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" groups="pdk" />
-  <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" groups="pdk" />
+  <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" revision="marshmallow-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" revision="marshmallow-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="marshmallow-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="marshmallow-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" revision="marshmallow-release" groups="pdk" />
 
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
