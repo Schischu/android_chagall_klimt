@@ -19,6 +19,7 @@
   </project>
 
   <project path=".org/android" name="platform/manifest" groups="pdk" />
+  <!-- Github branch should stay marshmallow-release regardless of aosp branch for this project -->
   <project path="android" name="Schischu/android_chagall_klimt" remote="github" revision="marshmallow-release" groups="pdk" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
@@ -32,6 +33,7 @@
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
 
+  <!-- Github branch should stay aosp-6.0 regardless of aosp branch for these projects -->
   <project path="device/samsung/chagall-klimt-common" name="Schischu/android_device_samsung_chagall_klimt_common" remote="github" revision="aosp-6.0" groups="device,chagall_klimt,broadcom_pdk" />
 
   <project path="device/samsung/chagallwifi" name="Schischu/android_device_samsung_chagallwifi" remote="github" revision="aosp-6.0" groups="device,chagallwifi,broadcom_pdk" />
@@ -69,7 +71,8 @@
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs,pdk-fs" />
 
   <project path=".org/external/boringssl" name="platform/external/boringssl" groups="pdk" />
-  <project path="external/boringssl" name="Schischu/aosp_android_external_boringssl" remote="github" revision="marshmallow-release" groups="pdk" />
+  <!-- TODO: Check if revision can be removed as is tagged -->
+  <project path="external/boringssl" name="Schischu/aosp_android_external_boringssl" remote="github" revision="marshmallow-dr1.5-release" groups="pdk" />
 
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
@@ -84,6 +87,10 @@
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
   <project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk-fs" />
+
+  <!-- Curl is only available for master/brillo/android n -->
+  <project path="external/curl" name="platform/external/curl" revision="master" groups="pdk-fs" />
+
   <project path="external/deqp" name="platform/external/deqp" groups="pdk-fs" />
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/dhcpcd" name="platform/external/dhcpcd" groups="pdk-cw-fs,pdk-fs" />
@@ -102,6 +109,9 @@
   <project path="external/embunit" name="platform/external/embunit" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs,pdk-fs" />
+
+  <project path="external/exfat" name="CyanogenMod/aosp_android_external_exfat" remote="github" revision="cm-13.0" groups="pdk" />
+
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" />
@@ -111,6 +121,9 @@
   <project path="external/fonttools" name="platform/external/fonttools" groups="pdk-fs" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk-cw-fs,pdk-fs" />
+
+  <project path="external/fuse" name="CyanogenMod/aosp_android_external_fuse" remote="github" revision="cm-13.0" groups="pdk" />
+
   <project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" />
   <project path="external/glide" name="platform/external/glide" groups="pdk-fs" />
   <project path="external/google-breakpad" name="platform/external/google-breakpad" groups="dragon" />
@@ -211,6 +224,9 @@
   <project path="external/nist-pkits" name="platform/external/nist-pkits" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" />
+
+   <project path="external/ntfs-3g" name="CyanogenMod/aosp_android_external_ntfs-3g" remote="github" revision="cm-13.0" groups="pdk" />
+
   <project path="external/oauth" name="platform/external/oauth" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/objenesis" name="platform/external/objenesis" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/okhttp" name="platform/external/okhttp" groups="pdk-cw-fs,pdk-fs" />
@@ -233,7 +249,8 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
 
   <project path=".org/external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
-  <project path="external/sepolicy" name="Schischu/aosp_android_external_sepolicy" remote="github" revision="marshmallow-release" groups="pdk" />
+  <!-- TODO: Check if revision can be removed as is tagged -->
+  <project path="external/sepolicy" name="Schischu/aosp_android_external_sepolicy" remote="github" revision="marshmallow-dr1.5-release" groups="pdk" />
 
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
   <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
@@ -326,7 +343,8 @@
   <project path="hardware/akm" name="platform/hardware/akm" />
 
   <project path=".org/hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
-  <project path="hardware/broadcom/libbt" name="Schischu/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" revision="marshmallow-release" />
+  <!-- TODO: Check if revision can be removed as is tagged -->
+  <project path="hardware/broadcom/libbt" name="Schischu/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" revision="marshmallow-dr1.5-release" />
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
@@ -341,11 +359,17 @@
   <project path=".org/hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ril" name="Schischu/aosp_android_hardware_ril" remote="github" groups="pdk" />
 
+  <!-- Github branch should stay marshmallow-release regardless of aosp branch for these projects -->
   <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" revision="marshmallow-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" revision="marshmallow-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="marshmallow-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="marshmallow-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" revision="marshmallow-release" groups="pdk" />
+  <!-- project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" revision="marshmallow-release" groups="pdk" / -->
+  <!-- project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="marshmallow-release" groups="pdk" / -->
+  <!-- project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="marshmallow-release" groups="pdk" / -->
+  <!-- project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" revision="marshmallow-release" groups="pdk" / -->
+  
+  <project path="hardware/samsung_slsi-cm/exynos" name="CyanogenMod/android_hardware_samsung_slsi-cm_exynos" remote="github" revision="cm-13.0" groups="pdk" />
+  <project path="hardware/samsung_slsi-cm/exynos5" name="CyanogenMod/android_hardware_samsung_slsi-cm_exynos5" remote="github" revision="cm-13.0" groups="pdk" />
+  <project path="hardware/samsung_slsi-cm/exynos5420" name="CyanogenMod/android_hardware_samsung_slsi-cm_exynos5420" remote="github" revision="cm-13.0" groups="pdk" />
+  <project path="hardware/samsung_slsi-cm/openmax" name="CyanogenMod/android_hardware_samsung_slsi-cm_openmax" remote="github" revision="cm-13.0" groups="pdk" />
 
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
@@ -382,7 +406,7 @@
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" groups="apps_nfc,pdk-fs" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
 
-  <project path="packages/apps/OpenDelta" name="omnirom/android_packages_apps_OpenDelta" remote="github" revision="android-6.0" groups="pdk-fs" />
+  <project path="packages/apps/OpenDelta" name="Schischu/android_packages_apps_OpenDelta" remote="github" revision="android-6.0" groups="pdk-fs" />
 
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" />
