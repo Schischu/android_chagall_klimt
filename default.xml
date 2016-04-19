@@ -110,7 +110,7 @@
   <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="external/exfat" name="CyanogenMod/aosp_android_external_exfat" remote="github" revision="cm-13.0" groups="pdk" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="cm-13.0" groups="pdk" />
 
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" />
@@ -122,7 +122,7 @@
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="external/fuse" name="CyanogenMod/aosp_android_external_fuse" remote="github" revision="cm-13.0" groups="pdk" />
+  <project path="external/fuse" name="CyanogenMod/android_external_fuse" remote="github" revision="cm-13.0" groups="pdk" />
 
   <project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" />
   <project path="external/glide" name="platform/external/glide" groups="pdk-fs" />
@@ -225,7 +225,7 @@
   <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" />
 
-   <project path="external/ntfs-3g" name="CyanogenMod/aosp_android_external_ntfs-3g" remote="github" revision="cm-13.0" groups="pdk" />
+   <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="github" revision="cm-13.0" groups="pdk" />
 
   <project path="external/oauth" name="platform/external/oauth" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/objenesis" name="platform/external/objenesis" groups="pdk-cw-fs,pdk-fs" />
