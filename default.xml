@@ -6,9 +6,10 @@
            review="android-review.googlesource.com" />
   
   <remote  name="github"
-           fetch="https://github.com/" />
+           fetch="https://github.com/" 
+           revision="refs/heads/android-6.0.1_r32"/>
   
-  <default revision="refs/tags/android-6.0.1_r22"
+  <default revision="refs/tags/android-6.0.1_r32"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -488,7 +489,7 @@
   <project path="system/security" name="platform/system/security" groups="pdk" />
 
   <project path=".org/system/vold" name="platform/system/vold" groups="pdk" />
-  <project path="system/vold" name="Schischu/aosp_android_system_vold" remote="github" groups="pdk" />
+  <project path="system/vold" name="Schischu/aosp_android_system_vold" remote="github" revision="cm-13.0" groups="pdk" />
 
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
