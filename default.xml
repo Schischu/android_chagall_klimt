@@ -7,9 +7,9 @@
   
   <remote  name="github"
            fetch="https://github.com/" 
-           revision="refs/heads/android-6.0.1_r32"/>
+           revision="refs/heads/android-6.0.1_r33"/>
   
-  <default revision="refs/tags/android-6.0.1_r32"
+  <default revision="refs/tags/android-6.0.1_r33"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -72,8 +72,7 @@
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs,pdk-fs" />
 
   <project path=".org/external/boringssl" name="platform/external/boringssl" groups="pdk" />
-  <!-- TODO: Check if revision can be removed as is tagged -->
-  <project path="external/boringssl" name="Schischu/aosp_android_external_boringssl" remote="github" revision="marshmallow-dr1.5-release" groups="pdk" />
+  <project path="external/boringssl" name="Schischu/aosp_android_external_boringssl" remote="github" groups="pdk" />
 
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
@@ -103,7 +102,7 @@
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
 
   <project path=".org/external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
-  <project path="external/e2fsprogs" name="Schischu/aosp_android_external_e2fsprogs" remote="github" revision="marshmallow-dr1.5-release" groups="pdk" />
+  <project path="external/e2fsprogs" name="Schischu/aosp_android_external_e2fsprogs" remote="github" groups="pdk" />
 
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" />
@@ -253,8 +252,7 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
 
   <project path=".org/external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
-  <!-- TODO: Check if revision can be removed as is tagged -->
-  <project path="external/sepolicy" name="Schischu/aosp_android_external_sepolicy" remote="github" revision="marshmallow-dr1.5-release" groups="pdk" />
+  <project path="external/sepolicy" name="Schischu/aosp_android_external_sepolicy" remote="github" groups="pdk" />
 
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
   <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
@@ -325,7 +323,10 @@
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
+
+  <project path=".org/frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
+  <project path="frameworks/opt/net/wifi" name="Schischu/aosp_android_frameworks_opt_net_wifi" remote="github" groups="pdk" />
+
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
 
@@ -337,7 +338,7 @@
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs,pdk-fs" />
 
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
-  <!--project path="frameworks/rs" name="Schischu/aosp_android_frameworks_rs" groups="pdk" remote="github" revision="marshmallow-release" /-->
+  <!--project path="frameworks/rs" name="Schischu/aosp_android_frameworks_rs" groups="pdk" remote="github" /-->
 
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/data-binding" name="platform/frameworks/data-binding" groups="pdk-cw-fs,pdk-fs" />
@@ -347,8 +348,7 @@
   <project path="hardware/akm" name="platform/hardware/akm" />
 
   <project path=".org/hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
-  <!-- TODO: Check if revision can be removed as is tagged -->
-  <project path="hardware/broadcom/libbt" name="Schischu/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" revision="marshmallow-dr1.5-release" />
+  <project path="hardware/broadcom/libbt" name="Schischu/aosp_android_hardware_broadcom_libbt" groups="pdk" remote="github" />
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
@@ -369,7 +369,7 @@
   <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="marshmallow-release" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="marshmallow-release" groups="pdk" />
   <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" revision="marshmallow-release" groups="pdk" />
-  
+
   <!-- project path="hardware/samsung_slsi-cm/exynos" name="CyanogenMod/android_hardware_samsung_slsi-cm_exynos" remote="github" revision="cm-13.0" groups="pdk" / -->
   <!-- project path="hardware/samsung_slsi-cm/exynos5" name="CyanogenMod/android_hardware_samsung_slsi-cm_exynos5" remote="github" revision="cm-13.0" groups="pdk" / -->
   <!-- project path="hardware/samsung_slsi-cm/exynos5420" name="CyanogenMod/android_hardware_samsung_slsi-cm_exynos5420" remote="github" revision="cm-13.0" groups="pdk" / -->
@@ -394,6 +394,10 @@
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
+
+  <!-- Exchange has no tag _33 so stay at _32 -->
+  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" revision="refs/tags/android-6.0.1_r32" groups="pdk-fs" />
+
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
@@ -504,4 +508,5 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+
 </manifest>
