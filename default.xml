@@ -7,9 +7,9 @@
   
   <remote  name="github"
            fetch="https://github.com/" 
-           revision="refs/heads/android-6.0.1_r55"/>
+           revision="refs/heads/android-6.0.1_r63"/>
   
-  <default revision="refs/tags/android-6.0.1_r55"
+  <default revision="refs/tags/android-6.0.1_r63"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -395,8 +395,7 @@
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
 
-  <!-- Exchange has no tag _33 so stay at _32 -->
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" revision="refs/tags/android-6.0.1_r32" groups="pdk-fs" />
+  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" groups="pdk-fs" />
 
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
