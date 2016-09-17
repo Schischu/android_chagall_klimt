@@ -28,7 +28,7 @@
 
   <project path=".org/android" name="platform/manifest" groups="pdk" />
   <!-- Github branch should stay marshmallow-release regardless of aosp branch for this project -->
-  <project path="android" name="Schischu/android_chagall_klimt" remote="github" revision="marshmallow-release" groups="pdk" >
+  <project path="android" name="Schischu/android_chagall_klimt" remote="github" revision="nougat-release" groups="pdk" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
 
@@ -45,14 +45,14 @@
   <project path="device/google/dragon" name="device/google/dragon" groups="device,dragon" />
 
   <!-- Github branch should stay aosp-6.0 regardless of aosp branch for these projects -->
-  <project path="device/samsung/chagall-klimt-common" name="Schischu/android_device_samsung_chagall_klimt_common" remote="github" revision="aosp-6.0" groups="device,chagall_klimt,broadcom_pdk" />
+  <project path="device/samsung/chagall-klimt-common" name="Schischu/android_device_samsung_chagall_klimt_common" remote="github" revision="aosp-7.0" groups="device,chagall_klimt,broadcom_pdk" />
 
-  <project path="device/samsung/chagallwifi" name="Schischu/android_device_samsung_chagallwifi" remote="github" revision="aosp-6.0" groups="device,chagallwifi,broadcom_pdk" />
-  <project path="device/samsung/chagalllte" name="Schischu/android_device_samsung_chagalllte" remote="github" revision="aosp-6.0" groups="device,chagalllte,broadcom_pdk" />
+  <project path="device/samsung/chagallwifi" name="Schischu/android_device_samsung_chagallwifi" remote="github" revision="aosp-7.0" groups="device,chagallwifi,broadcom_pdk" />
+  <project path="device/samsung/chagalllte" name="Schischu/android_device_samsung_chagalllte" remote="github" revision="aosp-7.0" groups="device,chagalllte,broadcom_pdk" />
 
 
-  <project path="device/samsung/klimtwifi" name="Schischu/android_device_samsung_klimtwifi" remote="github" revision="aosp-6.0" groups="device,klimtwifi,broadcom_pdk" />
-  <project path="device/samsung/klimtlte" name="Schischu/android_device_samsung_klimtlte" remote="github" revision="aosp-6.0" groups="device,klimtlte,broadcom_pdk" />
+  <project path="device/samsung/klimtwifi" name="Schischu/android_device_samsung_klimtwifi" remote="github" revision="aosp-7.0" groups="device,klimtwifi,broadcom_pdk" />
+  <project path="device/samsung/klimtlte" name="Schischu/android_device_samsung_klimtlte" remote="github" revision="aosp-7.0" groups="device,klimtlte,broadcom_pdk" />
 
   <project path="kernel/samsung/chagalllte" name="Schischu/android_kernel_samsung_chagalllte" remote="github" revision="cm-12.1" groups="kernel,chagall_klimt" />
 
@@ -65,7 +65,7 @@
   <project path="vendor/samsung/klimtwifi" name="Schischu/android_vendor_samsung_klimtwifi" remote="github" revision="nougat-release" />
   <project path="vendor/samsung/klimtlte" name="Schischu/android_vendor_samsung_klimtlte" remote="github" revision="nougat-release" />
 
-  <project path="vendor/google" name="Schischu/android_vendor_google" remote="github" revision="aosp-6.0" />
+  <project path="vendor/google" name="Schischu/android_vendor_google" remote="github" revision="aosp-7.0" />
 
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -297,7 +297,8 @@
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="external/stlport" name="platform/external/stlport" revision="lollipop-mr1-release" groups="pdk-cw-fs,pdk-fs" />
+  <!-- Removed, added as prebuild library -->
+  <!-- project path="external/stlport" name="platform/external/stlport" revision="lollipop-mr1-release" groups="pdk-cw-fs,pdk-fs" /-->
 
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" />
@@ -396,12 +397,12 @@
   <project path=".org/hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ril" name="Schischu/aosp_android_hardware_ril" remote="github" groups="pdk" />
 
-  <!-- Github branch should stay marshmallow-release regardless of aosp branch for these projects -->
-  <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" revision="marshmallow-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" revision="marshmallow-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="marshmallow-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="marshmallow-release" groups="pdk" />
-  <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" revision="marshmallow-release" groups="pdk" />
+  <!-- Github branch should stay nougat-release regardless of aosp branch for these projects -->
+  <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="nougat-release" groups="pdk" />
+  <project path="hardware/samsung_slsi/openmax" name="Schischu/android_hardware_samsung_slsi_openmax" remote="github" revision="nougat-release" groups="pdk" />
 
   <!-- project path="hardware/samsung_slsi-cm/exynos" name="CyanogenMod/android_hardware_samsung_slsi-cm_exynos" remote="github" revision="cm-13.0" groups="pdk" / -->
   <!-- project path="hardware/samsung_slsi-cm/exynos5" name="CyanogenMod/android_hardware_samsung_slsi-cm_exynos5" remote="github" revision="cm-13.0" groups="pdk" / -->
@@ -534,8 +535,8 @@
   <project path="system/nvram" name="platform/system/nvram" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
 
-  <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
-  <!-- project path="external/sepolicy" name="Schischu/aosp_android_external_sepolicy" remote="github" groups="pdk" / -->
+  <project path=".org/system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
+  <project path="system/sepolicy" name="Schischu/aosp_android_system_sepolicy" remote="github" groups="pdk" />
 
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/tpm" name="platform/system/tpm" />
