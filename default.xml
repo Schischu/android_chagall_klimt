@@ -15,7 +15,7 @@
            sync-j="4" />
 
   <project path=".org/build" name="platform/build" groups="pdk,tradefed" />
-  <project path="build" name="Schischu/aosp_android_build" remote="github" groups="pdk" >
+  <project path="build" name="Schischu/aosp_android_build" remote="github" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -130,7 +130,7 @@
   <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="cstaging/cm-14.0" groups="pdk" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="staging/cm-14.0" groups="pdk" />
 
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" />
@@ -543,8 +543,7 @@
   <project path="system/update_engine" name="platform/system/update_engine" />
 
   <project path=".org/system/vold" name="platform/system/vold" groups="pdk" />
-  <!-- project path="system/vold" name="Schischu/aosp_android_system_vold" remote="github" revision="cm-13.0" groups="pdk" /-->
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="staging/cm-14.0" groups="pdk" />
 
   <project path="system/weaved" name="platform/system/weaved" />
   <project path="system/webservd" name="platform/system/webservd" />
